@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8f3e83a4_cddcc9b2",
+        "filename": "opus/BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 1116023
+      },
+      "writtenOn": "2018-11-08T17:25:43Z",
+      "side": 1,
+      "message": "Do these files compile without -msse4.1? They use sse 4.1 intrinsics. If GCC doesn\u0027t support SSE 4.1 then I\u0027d expect it to fail to compile this file.",
+      "range": {
+        "startLine": 171,
+        "startChar": 7,
+        "endLine": 171,
+        "endChar": 34
+      },
+      "revId": "5c77582fbeb78af066bfa251797f512430c96273",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
