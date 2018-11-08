@@ -180,7 +180,7 @@ if (use_opus_x86_optimization) {
       ":opus_config",
     ]
 
-    if (!is_win || is_clang) {
+    if (is_clang) {
       cflags = [ "-msse4.1" ]
     }
   }
