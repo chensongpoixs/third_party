@@ -115,6 +115,30 @@
       "revId": "0b189a39c59b95fc2beca7e5dbdbe84bf40a0084",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cfb988b0_864c01bc",
+        "filename": "pffft/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1003232
+      },
+      "writtenOn": "2019-04-15T19:48:45Z",
+      "side": 1,
+      "message": "You probably want `(current_cpu \u003d\u003d \u0027arm\u0027 \u0026\u0026 !arm_use_neon)`, or something slightly more complicated if you\u0027re targeting both 32 and 64-bit arm.",
+      "parentUuid": "b62b5f49_cb3af050",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 3
+      },
+      "revId": "0b189a39c59b95fc2beca7e5dbdbe84bf40a0084",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
