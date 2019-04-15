@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "50a3a357_399a12cb",
+        "filename": "pffft/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1184474
+      },
+      "writtenOn": "2019-04-15T11:31:48Z",
+      "side": 1,
+      "message": "I fear this disables SIMD on non-ARM CPUs.\nI added another reviewer who can help more with this part.",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 3
+      },
+      "revId": "0b189a39c59b95fc2beca7e5dbdbe84bf40a0084",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
