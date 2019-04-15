@@ -2,6 +2,75 @@
   "comments": [
     {
       "key": {
+        "uuid": "79edf505_2200f5bb",
+        "filename": "pffft/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1178490
+      },
+      "writtenOn": "2019-04-15T12:11:44Z",
+      "side": 1,
+      "message": "I think it is better to import \"//build/config/arm.gni\".",
+      "range": {
+        "startLine": 5,
+        "startChar": 8,
+        "endLine": 5,
+        "endChar": 44
+      },
+      "revId": "0b189a39c59b95fc2beca7e5dbdbe84bf40a0084",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "491abbad_b277ae32",
+        "filename": "pffft/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1178490
+      },
+      "writtenOn": "2019-04-15T12:11:44Z",
+      "side": 1,
+      "message": "This will not work for builds that are not targeting ARM.\n\nIf you need this, you have to do something similar to https://cs.chromium.org/chromium/src/build/config/arm.gni?l\u003d11\u0026rcl\u003da9c3f5e58265c6be2c53d73ac9924a6d54e8d4cf.\n\n(the v8_current_cpu check is probably not needed but if you keep it I think it is ok).",
+      "range": {
+        "startLine": 16,
+        "startChar": 2,
+        "endLine": 16,
+        "endChar": 22
+      },
+      "revId": "0b189a39c59b95fc2beca7e5dbdbe84bf40a0084",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b57fcb17_fa959bc2",
+        "filename": "pffft/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1178490
+      },
+      "writtenOn": "2019-04-15T12:11:44Z",
+      "side": 1,
+      "message": "I suggest we continue to use `defines` to define macros. You will need to do:\n\n  defines \u003d []\n  if (is_win) {\n    defines +\u003d [...]\n  }\n  ...",
+      "range": {
+        "startLine": 17,
+        "startChar": 4,
+        "endLine": 17,
+        "endChar": 10
+      },
+      "revId": "0b189a39c59b95fc2beca7e5dbdbe84bf40a0084",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "50a3a357_399a12cb",
         "filename": "pffft/BUILD.gn",
         "patchSetId": 1
@@ -13,6 +82,30 @@
       "writtenOn": "2019-04-15T11:31:48Z",
       "side": 1,
       "message": "I fear this disables SIMD on non-ARM CPUs.\nI added another reviewer who can help more with this part.",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 3
+      },
+      "revId": "0b189a39c59b95fc2beca7e5dbdbe84bf40a0084",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b62b5f49_cb3af050",
+        "filename": "pffft/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1178490
+      },
+      "writtenOn": "2019-04-15T12:11:44Z",
+      "side": 1,
+      "message": "In this case GN stops right away because `arm_use_neon` is not defined unless ARM is the target arch, but this is a good comment (see above a possible solution).",
+      "parentUuid": "50a3a357_399a12cb",
       "range": {
         "startLine": 16,
         "startChar": 0,
