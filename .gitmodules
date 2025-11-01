@@ -1,6 +1,6 @@
 [submodule "faad2"]
 	path = faad2
-	url = https://github.com/knik0/faad2.git
+	url = https://github.com/chensongpoixs/faad2.git
 [submodule "libjpeg_turbo"]
 	path = libjpeg_turbo
 	url = https://github.com/chensongpoixs/libjpeg_turbo.git

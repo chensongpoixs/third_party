@@ -1,4 +1,11 @@
+#if OPEN_DEPS
+#include "deps/rnnoise/src/rnn_vad_weights.h"
+
+#else 
 #include "third_party/rnnoise/src/rnn_vad_weights.h"
+
+
+#endif //
 
 namespace rnnoise {
 
