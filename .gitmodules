@@ -1,0 +1,30 @@
+[submodule "faad2"]
+	path = faad2
+	url = https://github.com/knik0/faad2.git
+[submodule "libjpeg_turbo"]
+	path = libjpeg_turbo
+	url = https://github.com/chensongpoixs/libjpeg_turbo.git
+[submodule "jsoncpp/source"]
+	path = jsoncpp/source
+	url = https://github.com/chensongpoixs/jsoncpp.git
+[submodule "libuv"]
+	path = libuv
+	url = https://github.com/chensongpoixs/libuv.git
+[submodule "libyuv"]
+	path = libyuv
+	url = https://github.com/chensongpoixs/libyuv
+[submodule "libsip"]
+	path = libsip
+	url = https://github.com/chensongpoixs/libsip.git
+[submodule "yaml-cpp"]
+	path = yaml-cpp
+	url = https://github.com/chensongpoixs/yaml-cpp
+[submodule "usrsctp/usrsctplib"]
+	path = usrsctp/usrsctplib
+	url = https://github.com/chensongpoixs/usrsctp
+[submodule "libsrtp"]
+	path = libsrtp
+	url = https://github.com/chensongpoixs/libsrtp
+[submodule "libcurl"]
+	path = libcurl
+	url = https://github.com/chensongpoixs/curl
